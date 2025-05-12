@@ -19,7 +19,7 @@ merged_df["days_since_signup"] = (merged_df["event_time"] - merged_df["signup_da
 # Filtered the merged data to get users who had an event on Day 1 (days_since_signup == 1)
 day1_retention = merged_df[merged_df["days_since_signup"] == 1][["user_id", "group"]].drop_duplicates()
 
-# - Counted the number of unique users in each group (control and test) who retained on Day 1
+# Counted the number of unique users in each group (control and test) who retained on Day 1
 day1_counts = day1_retention.groupby("group")["user_id"].nunique()
 
 # Counted the total signups per group (control and test)
@@ -88,7 +88,7 @@ print("P-Value:", round(p_val, 3))  # P-value from the Z-test, indicates statist
 
 
 
-# Result Output:
+###### Result Output:
 
 Day 1 Retention Rate:
  group
