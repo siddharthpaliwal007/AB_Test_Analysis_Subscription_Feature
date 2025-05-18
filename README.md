@@ -38,13 +38,13 @@ The events data file contains the following columns:<br />
 ## Key Metrics:
 
 ### 1. Day 1 Retention Rate:<br />
-Control Group: 0.432<br />
-Test Group: 0.214<br />
-Interpretation:<br />
-The Control Group has a Day 1 retention rate of 43.2%, which means that 43.2% of the users who signed up in this group were still active after Day 1.<br />
-The Test Group has a Day 1 retention rate of 21.4%. This is lower than the control group, meaning fewer users in the test group retained after Day 1.<br />
-Personal Opinion: <br />
-This result makes sense if the new feature introduced in the Test Group (subscription feature) had a negative impact or if other factors affected retention negatively. Generally, you would expect the Test Group to either perform better or worse compared to the control group, depending on the feature's effectiveness.
+* Control Group: 0.432<br />
+* Test Group: 0.214<br />
+* Interpretation:<br />
+  - The Control Group has a Day 1 retention rate of 43.2%, which means that 43.2% of the users who signed up in this group were still active after Day 1.<br />
+  - The Test Group has a Day 1 retention rate of 21.4%. This is lower than the control group, meaning fewer users in the test group retained after Day 1.<br />
+* Personal Opinion: <br />
+  - This result makes sense if the new feature introduced in the Test Group (subscription feature) had a negative impact or if other factors affected retention negatively. Generally, you would expect the Test Group to either perform better or worse compared to the control group, depending on the feature's effectiveness.
 
 ### 2. Day 7 Retention Rate:<br />
 Control Group: 0.227<br />
