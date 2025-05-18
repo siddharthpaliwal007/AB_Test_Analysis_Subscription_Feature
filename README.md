@@ -2,8 +2,8 @@
 
 ## Objective:
 * The primary goal of this analysis is to evaluate the impact of a new subscription feature on user retention and subscription conversion rates, by comparing the performance of two groups: <br />
-- Group A (Control) – No new subscription feature. <br />
-- Group B (Test) – New subscription feature enabled. <br />
+  - Group A (Control) – No new subscription feature. <br />
+  - Group B (Test) – New subscription feature enabled. <br />
 * By performing this A/B test analysis, we aim to understand how the introduction of a subscription feature affects Day 1 and Day 7 user retention and the conversion rate of users who subscribed within 7 days.
 
 ## Background:
