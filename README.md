@@ -25,15 +25,15 @@ The events data file contains the following columns:<br />
 
 ## Steps Taken:
 * ### Data Loading
-- Both users.csv and events.csv files are loaded into pandas DataFrames. Date columns are parsed into appropriate datetime format.<br />
+  - Both users.csv and events.csv files are loaded into pandas DataFrames. Date columns are parsed into appropriate datetime format.<br />
 * ### Data Merging
--Both datasets are merged based on the user_id to combine the user information with their respective event activities.<br />
+  - Both datasets are merged based on the user_id to combine the user information with their respective event activities.<br />
 * ### Retention Calculation
-- Retention is calculated at Day 1 and Day 7, by grouping users based on their group (control/test) and counting how many users were active on those days.<br />
+  - Retention is calculated at Day 1 and Day 7, by grouping users based on their group (control/test) and counting how many users were active on those days.<br />
 * ### Subscription Conversion:
-- The subscription conversion rate is calculated by counting how many users in the test group subscribed within 7 days.<br />
+  - The subscription conversion rate is calculated by counting how many users in the test group subscribed within 7 days.<br />
 * ### Statistical Test:
-- A z-test is performed to determine if the difference in Day 7 retention between the control and test groups is statistically significant.
+  - A z-test is performed to determine if the difference in Day 7 retention between the control and test groups is statistically significant.
 
 ## Key Metrics:
 
