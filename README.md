@@ -1,15 +1,15 @@
 # A-B_Test_Analysis_Subscription_Feature
 
-## Objective:
+## Objective
 * The primary goal of this analysis is to evaluate the impact of a new subscription feature on user retention and subscription conversion rates, by comparing the performance of two groups: <br />
   - Group A (Control) – No new subscription feature. <br />
   - Group B (Test) – New subscription feature enabled. <br />
 * By performing this A/B test analysis, we aim to understand how the introduction of a subscription feature affects Day 1 and Day 7 user retention and the conversion rate of users who subscribed within 7 days.
 
-## Background:
+## Background
 The company is rolling out a new subscription feature for users, and the business goal is to increase user retention and conversion rates. The analysis measures the retention rates at Day 1 and Day 7, as well as the conversion rate of users who have subscribed. The hypothesis is that the new subscription feature will lead to better retention rates and higher subscription conversion for users in the test group compared to the control group.
 
-## Data Collection Details:
+## Data Collection Details
 
 ### 1. Users Data (users.csv)
 The user data file contains the following columns:<br />
@@ -23,7 +23,7 @@ The events data file contains the following columns:<br />
 - event_type: The type of event triggered by the user, e.g., 'subscription_signup'.<br />
 - event_time: The timestamp when the event occurred.
 
-## Steps Taken:
+## Steps Taken
 * ### Data Loading
   - Both users.csv and events.csv files are loaded into pandas DataFrames. Date columns are parsed into appropriate datetime format.<br />
 * ### Data Merging
@@ -35,7 +35,7 @@ The events data file contains the following columns:<br />
 * ### Statistical Test:
   - A z-test is performed to determine if the difference in Day 7 retention between the control and test groups is statistically significant.
 
-## Key Metrics:
+## Key Metrics
 
 ### 1. Day 1 Retention Rate:<br />
 * Control Group: 0.432<br />
@@ -75,13 +75,13 @@ The events data file contains the following columns:<br />
 * Personal Opinion: <br />
   - Yes. A p-value of 0.394 indicates that there is a high likelihood that the observed difference between the Control and Test groups could have occurred by chance. Therefore, you cannot reject the null hypothesis, meaning there isn't strong evidence to say the new subscription feature has a significant impact on retention.
 
-## Conclusion:<br />
+## Conclusion
 While the new subscription feature seems to have a positive impact on Day 7 retention, the difference is not statistically significant based on the Z-test. This means that, while there might be an improvement, more data or further testing may be required to confidently conclude that the feature is effective in driving retention.
 
-## Business Impact:<br />
-The test results help the product and marketing teams determine whether the new subscription feature is worth rolling out to a wider audience.<br />
-The insights gained from retention and conversion rates can help adjust the feature to make it more appealing to users, thus improving long-term user engagement and monetization.<br />
-This analysis is foundational for future iterations of the feature and can help define further A/B tests to fine-tune product offerings based on user behavior.
+## Business Impact 
+- The test results help the product and marketing teams determine whether the new subscription feature is worth rolling out to a wider audience.<br />
+- The insights gained from retention and conversion rates can help adjust the feature to make it more appealing to users, thus improving long-term user engagement and monetization.<br />
+- This analysis is foundational for future iterations of the feature and can help define further A/B tests to fine-tune product offerings based on user behavior.
 
 
 
