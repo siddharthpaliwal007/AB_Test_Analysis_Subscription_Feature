@@ -1,10 +1,10 @@
 # A-B_Test_Analysis_Subscription_Feature
 
 ## Objective:
-The primary goal of this analysis is to evaluate the impact of a new subscription feature on user retention and subscription conversion rates, by comparing the performance of two groups: <br />
-Group A (Control) – No new subscription feature. <br />
-Group B (Test) – New subscription feature enabled. <br />
-By performing this A/B test analysis, we aim to understand how the introduction of a subscription feature affects Day 1 and Day 7 user retention and the conversion rate of users who subscribed within 7 days.
+* The primary goal of this analysis is to evaluate the impact of a new subscription feature on user retention and subscription conversion rates, by comparing the performance of two groups: <br />
+- Group A (Control) – No new subscription feature. <br />
+- Group B (Test) – New subscription feature enabled. <br />
+* By performing this A/B test analysis, we aim to understand how the introduction of a subscription feature affects Day 1 and Day 7 user retention and the conversion rate of users who subscribed within 7 days.
 
 ## Background:
 The company is rolling out a new subscription feature for users, and the business goal is to increase user retention and conversion rates. The analysis measures the retention rates at Day 1 and Day 7, as well as the conversion rate of users who have subscribed. The hypothesis is that the new subscription feature will lead to better retention rates and higher subscription conversion for users in the test group compared to the control group.
@@ -13,22 +13,27 @@ The company is rolling out a new subscription feature for users, and the busines
 
 ### 1. Users Data (users.csv)<br />
 The user data file contains the following columns:<br />
-user_id: Unique identifier for each user.<br />
-signup_date: The date when the user signed up for the platform.<br />
-group: The group to which the user belongs. Either "control" (no subscription feature) or "test" (with subscription feature).
+- user_id: Unique identifier for each user.<br />
+- signup_date: The date when the user signed up for the platform.<br />
+- group: The group to which the user belongs. Either "control" (no subscription feature) or "test" (with subscription feature).
 
 ### 2. Events Data (events.csv)<br />
 The events data file contains the following columns:<br />
-user_id: Unique identifier for each user.<br />
-event_type: The type of event triggered by the user, e.g., 'subscription_signup'.<br />
-event_time: The timestamp when the event occurred.
+- user_id: Unique identifier for each user.<br />
+- event_type: The type of event triggered by the user, e.g., 'subscription_signup'.<br />
+- event_time: The timestamp when the event occurred.
 
 ## Steps Taken:
-Data Loading: Both users.csv and events.csv files are loaded into pandas DataFrames. Date columns are parsed into appropriate datetime format.<br />
-Data Merging: Both datasets are merged based on the user_id to combine the user information with their respective event activities.<br />
-Retention Calculation: Retention is calculated at Day 1 and Day 7, by grouping users based on their group (control/test) and counting how many users were active on those days.<br />
-Subscription Conversion: The subscription conversion rate is calculated by counting how many users in the test group subscribed within 7 days.<br />
-Statistical Test: A z-test is performed to determine if the difference in Day 7 retention between the control and test groups is statistically significant.
+* ### Data Loading
+- Both users.csv and events.csv files are loaded into pandas DataFrames. Date columns are parsed into appropriate datetime format.<br />
+* ### Data Merging
+-Both datasets are merged based on the user_id to combine the user information with their respective event activities.<br />
+* ### Retention Calculation
+- Retention is calculated at Day 1 and Day 7, by grouping users based on their group (control/test) and counting how many users were active on those days.<br />
+* ### Subscription Conversion:
+- The subscription conversion rate is calculated by counting how many users in the test group subscribed within 7 days.<br />
+* ### Statistical Test:
+- A z-test is performed to determine if the difference in Day 7 retention between the control and test groups is statistically significant.
 
 ## Key Metrics:
 
