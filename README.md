@@ -47,33 +47,33 @@ The events data file contains the following columns:<br />
   - This result makes sense if the new feature introduced in the Test Group (subscription feature) had a negative impact or if other factors affected retention negatively. Generally, you would expect the Test Group to either perform better or worse compared to the control group, depending on the feature's effectiveness.
 
 ### 2. Day 7 Retention Rate:<br />
-Control Group: 0.227<br />
-Test Group: 0.304<br />
-Interpretation:<br />
-After 7 days, the Control Group has a retention rate of 22.7%, which means 22.7% of the users in this group remained active after 7 days.<br />
-The Test Group has a higher Day 7 retention rate of 30.4%, suggesting that the new subscription feature helped increase retention in the long term.<br />
-Personal Opinion: <br />
-This result is interesting because, although the Test Group had a lower Day 1 retention rate, it outperforms the Control Group in Day 7 retention. It could mean that the new subscription feature attracted users in the short term but provided more value and engagement in the long term, improving retention after 7 days.
+* Control Group: 0.227<br />
+* Test Group: 0.304<br />
+* Interpretation:<br />
+  - After 7 days, the Control Group has a retention rate of 22.7%, which means 22.7% of the users in this group remained active after 7 days.<br />
+  - The Test Group has a higher Day 7 retention rate of 30.4%, suggesting that the new subscription feature helped increase retention in the long term.<br />
+* Personal Opinion: <br />
+  - This result is interesting because, although the Test Group had a lower Day 1 retention rate, it outperforms the Control Group in Day 7 retention. It could mean that the new subscription feature attracted users in the short term but provided more value and engagement in the long term, improving retention after 7 days.
 
 
 ### 3. Subscription Conversion Rate (Test Group): 0.321<br />
-Interpretation:<br />
-This means that 32.1% of the users in the Test Group converted to the new subscription feature within 7 days of signing up.<br />
-Personal Opinion: <br />
-This seems reasonable. A 32.1% conversion rate indicates a strong uptake of the new subscription feature. However, it's important to evaluate whether this conversion rate is sufficient given the business's objectives and user expectations.
+* Interpretation:<br />
+  - This means that 32.1% of the users in the Test Group converted to the new subscription feature within 7 days of signing up.<br />
+* Personal Opinion: <br />
+  - This seems reasonable. A 32.1% conversion rate indicates a strong uptake of the new subscription feature. However, it's important to evaluate whether this conversion rate is sufficient given the business's objectives and user expectations.
 
 ### 4. Z-Statistic: -0.853
-Interpretation:<br />
-The Z-statistic measures the difference between the observed proportions (retention rates in this case) between the two groups in units of standard deviation. A Z-statistic of -0.853 indicates a small difference between the groups, but the difference is not large enough to be statistically significant.<br />
-Personal Opinion: <br />
-A negative Z-statistic simply means that the Test Group's retention rate is lower than the Control Group's, but it's not a very large difference. This value suggests that the difference between the groups is relatively small.
+* Interpretation:<br />
+  - The Z-statistic measures the difference between the observed proportions (retention rates in this case) between the two groups in units of standard deviation. A Z-statistic of -0.853 indicates a small difference between the groups, but the difference is not large enough to be statistically significant.<br />
+* Personal Opinion: <br />
+  - A negative Z-statistic simply means that the Test Group's retention rate is lower than the Control Group's, but it's not a very large difference. This value suggests that the difference between the groups is relatively small.
 
 ### 5. P-Value: 0.394
-Interpretation:<br />
-The p-value tells us whether the difference between the two groups is statistically significant.<br />
-A p-value of 0.394 is greater than the typical threshold of 0.05, meaning the difference between the retention rates of the Control and Test groups is not statistically significant.<br />
-Personal Opinion: <br />
-Yes. A p-value of 0.394 indicates that there is a high likelihood that the observed difference between the Control and Test groups could have occurred by chance. Therefore, you cannot reject the null hypothesis, meaning there isn't strong evidence to say the new subscription feature has a significant impact on retention.
+* Interpretation:<br />
+  - The p-value tells us whether the difference between the two groups is statistically significant.<br />
+  - A p-value of 0.394 is greater than the typical threshold of 0.05, meaning the difference between the retention rates of the Control and Test groups is not statistically significant.<br />
+* Personal Opinion: <br />
+  - Yes. A p-value of 0.394 indicates that there is a high likelihood that the observed difference between the Control and Test groups could have occurred by chance. Therefore, you cannot reject the null hypothesis, meaning there isn't strong evidence to say the new subscription feature has a significant impact on retention.
 
 ## Conclusion:<br />
 While the new subscription feature seems to have a positive impact on Day 7 retention, the difference is not statistically significant based on the Z-test. This means that, while there might be an improvement, more data or further testing may be required to confidently conclude that the feature is effective in driving retention.
