@@ -11,13 +11,13 @@ The company is rolling out a new subscription feature for users, and the busines
 
 ## Data Collection Details:
 
-### 1. Users Data (users.csv)<br />
+### 1. Users Data (users.csv)
 The user data file contains the following columns:<br />
 - user_id: Unique identifier for each user.<br />
 - signup_date: The date when the user signed up for the platform.<br />
 - group: The group to which the user belongs. Either "control" (no subscription feature) or "test" (with subscription feature).
 
-### 2. Events Data (events.csv)<br />
+### 2. Events Data (events.csv)
 The events data file contains the following columns:<br />
 - user_id: Unique identifier for each user.<br />
 - event_type: The type of event triggered by the user, e.g., 'subscription_signup'.<br />
